@@ -1,7 +1,7 @@
 const validateCodeService = async (regCode, setActive) => {
     try {
         const res = await fetch(
-            `http://localhost:8000/users/validate/${regCode}`,
+            `https://backprueba-ck3e-dev.fl0.io/users/validate/${regCode}`,
             {
                 method: 'put',
                 headers: {

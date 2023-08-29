@@ -5,7 +5,7 @@ const validatePassword = async (currentPass, newPass, token) => {
     formData.append('newPass', newPass);
 
     try {
-        const res = await fetch(`http://localhost:8000/users/password`, {
+        const res = await fetch(`https://backprueba-ck3e-dev.fl0.io/users/password`, {
             method: 'put',
             headers: {
                 Authorization: token,

@@ -4,7 +4,7 @@ const placeEditService = async (place, token) => {
     formData.append('place', place);
 
     try {
-        const res = await fetch('http://localhost:8000/users/place', {
+        const res = await fetch('https://backprueba-ck3e-dev.fl0.io/users/place', {
             method: 'PUT',
             headers: {
                 Authorization: token,

@@ -1,5 +1,5 @@
 const userService = async (token) => {
-    const res = await fetch('http://localhost:8000/users', {
+    const res = await fetch('https://backprueba-ck3e-dev.fl0.io/users', {
         headers: {
             Authorization: token,
         },

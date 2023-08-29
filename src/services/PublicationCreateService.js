@@ -16,7 +16,7 @@ const PublicationCreateService = async (
     formData.append('place', place);
     formData.append('type', type);
 
-    const res = await fetch('http://localhost:8000/publications', {
+    const res = await fetch('https://backprueba-ck3e-dev.fl0.io/publications', {
         method: 'post',
         headers: {
             Authorization: token,

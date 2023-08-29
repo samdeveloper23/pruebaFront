@@ -1,6 +1,6 @@
 const deleteCommentService = async (publicationId, commentId, token) => {
     const res = await fetch(
-        `http://localhost:8000/publications/${publicationId}/comments/${commentId}`,
+        `https://backprueba-ck3e-dev.fl0.io/publications/${publicationId}/comments/${commentId}`,
         {
             method: 'delete',
             headers: {

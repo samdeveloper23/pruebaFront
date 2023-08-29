@@ -1,5 +1,5 @@
 const registerService = async (username, ownername, email, password, role) => {
-    const res = await fetch('http://localhost:8000/users', {
+    const res = await fetch('https://backprueba-ck3e-dev.fl0.io/users', {
         method: 'post',
         headers: {
             'Content-Type': 'application/json',

@@ -1,6 +1,6 @@
 const deletePublicationService = async (publicationId, token) => {
     const res = await fetch(
-        `http://localhost:8000/publications/${publicationId}`,
+        `https://backprueba-ck3e-dev.fl0.io/publications/${publicationId}`,
         {
             method: 'delete',
             headers: {

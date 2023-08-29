@@ -1,7 +1,7 @@
 const editRecoverPassCodeService = async (recoverPassCode, newPass) => {
     try {
         const res = await fetch(
-            `http://localhost:8000/users/password/recover`,
+            `https://backprueba-ck3e-dev.fl0.io/users/password/recover`,
             {
                 method: 'put',
                 headers: {

@@ -1,5 +1,5 @@
 const sendRecoverPassService = async (email) => {
-    const res = await fetch('http://localhost:8000/users/password/recover', {
+    const res = await fetch('https://backprueba-ck3e-dev.fl0.io/users/password/recover', {
         method: 'post',
         headers: {
             'Content-Type': 'application/json',

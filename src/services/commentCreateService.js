@@ -4,7 +4,7 @@ const commentCreateService = async (text, id, token) => {
     formData.append('text', text);
 
     const res = await fetch(
-        `http://localhost:8000/publications/${id}/comments`,
+        `https://backprueba-ck3e-dev.fl0.io/publications/${id}/comments`,
         {
             method: 'post',
             headers: {

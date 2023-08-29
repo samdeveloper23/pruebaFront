@@ -18,7 +18,7 @@ const usePublications = () => {
                 setLoading(true);
 
                 const res = await fetch(
-                    `https://backprueba-ck3e-dev.fl0.io//publications?${searchParams.toString()}`,
+                    `https://backprueba-ck3e-dev.fl0.io/publications?${searchParams.toString()}`,
                     {
                         headers: token ? { Authorization: token } : {},
                     }

@@ -4,7 +4,7 @@ const personalInfoEditService = async (personalInfo, token) => {
     formData.append('personalInfo', personalInfo);
 
     try {
-        const res = await fetch('http://localhost:8000/users/info', {
+        const res = await fetch('https://backprueba-ck3e-dev.fl0.io/users/info', {
             method: 'PUT',
             headers: {
                 Authorization: token,

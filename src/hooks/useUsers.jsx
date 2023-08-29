@@ -16,7 +16,7 @@ const useUsers = () => {
                 setLoading(true);
 
                 const res = await fetch(
-                    `http://localhost:8000/users?${searchParams.toString()}`,
+                    `https://backprueba-ck3e-dev.fl0.io/users?${searchParams.toString()}`,
                     {
                         headers: token ? { Authorization: token } : {},
                     }

@@ -19,7 +19,7 @@ const useSinglePublication = () => {
                 setLoading(true);
 
                 const res = await fetch(
-                    `http://localhost:8000/publications/${id}`,
+                    `https://backprueba-ck3e-dev.fl0.io/publications/${id}`,
                     {
                         headers: token ? { Authorization: token } : {},
                     }
@@ -96,7 +96,6 @@ const useSinglePublication = () => {
         }
     };
 
-   
     return {
         publication,
         toogleLike,

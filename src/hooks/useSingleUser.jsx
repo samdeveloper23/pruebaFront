@@ -14,7 +14,7 @@ const useSingleUser = (userId) => {
                 setLoading(true);
 
                 const res = await fetch(
-                    `http://localhost:8000/users/${userId}`,
+                    `https://backprueba-ck3e-dev.fl0.io/users/${userId}`,
                     {
                         headers: token ? { Authorization: token } : {},
                     }
