@@ -26,7 +26,7 @@ const SettingsPage = () => {
         };
         fetchUser();
     }, [token]);
-
+    console.log(user);
     return (
         <>
             <main className='main-layout'>
@@ -42,7 +42,7 @@ const SettingsPage = () => {
                         <div className='edit-personalInfo'>
                             <EditPersonalInfo
                                 token={token}
-                                currentPersonalInfo={user.personalInfo}
+                                currentPersonalInfo={user.personalinfo}
                             />
                         </div>
 

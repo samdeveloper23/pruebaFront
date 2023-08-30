@@ -5,7 +5,11 @@ const Avatar = ({ avatar, username }) => {
     return (
         <div className='avatar-image'>
             <img
-                src={avatar ? `http://localhost:8000/${avatar}` : defaultAvatar}
+                src={
+                    avatar
+                        ? `https://backprueba-ck3e-dev.fl0.io/${avatar}`
+                        : defaultAvatar
+                }
                 alt={`${username} avatar`}
             />
         </div>

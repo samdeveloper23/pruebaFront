@@ -41,7 +41,9 @@ const UserProfile = ({ user, token }) => {
                         <div className='settingsDiv'>
                             {user.userId === userOwner.userId && (
                                 <NavLink
-                                className={`settings-button ${isDarkMode ? 'dark' : 'light'}`}
+                                    className={`settings-button ${
+                                        isDarkMode ? 'dark' : 'light'
+                                    }`}
                                     to='/settings'
                                 >
                                     <MdSettings
@@ -113,3 +115,5 @@ UserProfile.propTypes = {
 };
 
 export default UserProfile;
+
+//reparacion
